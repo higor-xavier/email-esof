@@ -1,6 +1,6 @@
 # email-esof
 -----------------------Histórias definidas em aula----------------------------
--> Como usuário comum, gostaria de logar no sistema;
+-> Como usuário comum, gostaria de logar no sistema;\n
 -> Como usuário comum, gostaria de poder criar, ler, atualizar e deletar minhas credenciais de login;
 -> Como usuário comum, gostaria de ter acesso a uma caixa de entrada;
 -> Como usuário comum, gostaria de logar no sistema;
