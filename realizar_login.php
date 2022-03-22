@@ -27,4 +27,6 @@
 		header('Location: index.php?login=erro'); //Caso não, redireciona para a página de login
 	}
 
+	mysqli_close()($conexao); //Fecha conexão com banco de dados
+
 ?>
