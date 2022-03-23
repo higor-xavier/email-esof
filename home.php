@@ -58,17 +58,19 @@
                 <li><a href="#">Contact</a></li> -->
             </ul>
             <!-- Button trigger modal -->
-            <button type="button" class="btn btn-secondary ml-5" data-bs-toggle="modal" data-bs-target="#modalConfig">
-              <i class="fas fa-cog fa-2x"></i>
-            </button>
+            <div class="opcoes">
+              <button type="button" class="btn btn-secondary ml-5" data-bs-toggle="modal" data-bs-target="#modalConfig">
+                <i class="fas fa-cog fa-2x"></i>
+              </button>
 
-            <button class="btn btn-secondary ml-3" onclick="sair();">
-              <i class="fas fa-sign-out-alt fa-2x"></i>
-            </button>
+              <button class="btn btn-secondary ml-3" onclick="sair();">
+                <i class="fas fa-sign-out-alt fa-2x"></i>
+              </button>
+            </div>
         </nav>
 
         <div id="content">
-            <button type="button" id="sidebarCollapse" class="btn navbar-btn">
+            <button type="button" id="sidebarCollapse" class="btn navbar-btn btn-light" style="border: none;">
                 <span></span>
                 <span></span>
                 <span></span>
