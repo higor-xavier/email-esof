@@ -6,6 +6,7 @@
   <head>
     <meta charset="utf-8" />
     <title>E-mail ESOF</title>
+    <link rel="icon" href="imagens/mail.png">
 
     <!-- Bootstrap início -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -21,56 +22,59 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
-    <style>
-      .card-home {
-        padding: 30px 0 0 0;
-        width: 100%;
-        margin: 0 auto;
-      }
-    </style>
+    <!-- CSS customizado -->
+    <link rel="stylesheet" type="text/css" href="CSS/estilo-home.css">
+
   </head>
 
   <body>
 
-    <nav class="navbar navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">
-        App Help Desk
-      </a>
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="logoff.php">SAIR</a>
-        </li>
-      </ul>
-    </nav>
+    <!-- Incluindo o fundo da página de login -->
+    <img id="fundo" src="imagens/fundo.jpg">
 
-    <div class="container">    
-      <div class="row">
-        <div class="card-home">
-          <div class="card">
-            <div class="card-header">
-              Menu
+    <!-- Menu lateral -->
+    <div class="wrapper">
+
+        <nav id="sidebar">
+            <!-- Sidebar Header -->
+            <div class="sidebar-header">
+                <img src="imagens/perfil.png" width="50px" height="50px">
+                <?= $_SESSION['email']; ?>
             </div>
-            <div class="card-body">
-              <div class="row">
-                <div class="col-6 d-flex justify-content-center">
-                  <a href="abrir_chamado.php">
-                  </a>  
-                </div>
-                <div class="col-6 d-flex justify-content-center">
-                  <a href="consultar_chamado.php">
-                  </a> 
-                </div>
-              </div>
-            </div>
-          </div>
+
+            <!-- Sidebar Links -->
+            <ul class="list-unstyled components">
+                <li class="active"><a href="#">Caixa de entrada (11)</a></li>
+                <li><a href="#">Escrever e-mail</a></li>
+                <li><a href="#">Rascunhos (3)</a></li>
+                <!-- <li> Link with dropdown items 
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Pages</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li><a href="#">Page</a></li>
+                        <li><a href="#">Page</a></li>
+                        <li><a href="#">Page</a></li>
+                    </ul>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li> -->
+            </ul>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-secondary ml-5" data-bs-toggle="modal" data-bs-target="#modalConfig">
+              <i class="fas fa-cog fa-2x"></i>
+            </button>
+
+            <button class="btn btn-secondary ml-3" onclick="sair();">
+              <i class="fas fa-sign-out-alt fa-2x"></i>
+            </button>
+        </nav>
+
+        <div id="content">
+            <button type="button" id="sidebarCollapse" class="btn navbar-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
-      </div>
     </div>
-
-    <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalConfig">
-      Launch demo modal
-    </button>
 
     <!-- Modal -->
     <div class="modal fade" id="modalConfig" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -234,6 +238,17 @@
       function apagar() {
         window.location.href = "apagar.php";
       }
+
+      function sair() {
+        window.location.href = "logoff.php";
+      }
+
+      $(document).ready(function () {
+          $('#sidebarCollapse').on('click', function () {
+              $('#sidebar').toggleClass('active');
+              $(this).toggleClass('active');
+          });
+      });
     </script>
 
   </body>
