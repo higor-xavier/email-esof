@@ -20,6 +20,7 @@
 	if (mysqli_num_rows($resultado) != 0) {
 		echo 'Usuário autenticado';
 		$_SESSION['autenticado'] = 'SIM';
+		$_SESSION['email'] = $email;
 		header('Location: home.php');
 	}
 	else{
