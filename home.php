@@ -76,6 +76,19 @@
                 <span></span>
             </button>
         </div>
+
+        <div class="container caixa-entrada">
+          <div class="header-caixa">
+            Header
+          </div>
+          <div class="body-caixa">
+            Body Caixa
+          </div>
+          <div class="footer-caixa">
+            Footer Caixa
+          </div>
+        </div>
+
     </div>
 
     <!-- Modal -->
