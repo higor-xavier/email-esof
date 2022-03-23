@@ -96,9 +96,13 @@
             </div>
           </div>
           <div class="modal-footer">
+              <button type="button" class="btn btn-danger" onclick="apagar();">Apagar conta</button>
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
               <input type="submit" class="btn btn-primary" value="Salvar">
             </form>
+          </div>
+          <div class="modal-footer">
+            
           </div>
         </div>
       </div>
@@ -225,6 +229,12 @@
     <?php 
       }
     ?>
+
+    <script type="text/javascript">
+      function apagar() {
+        window.location.href = "apagar.php";
+      }
+    </script>
 
   </body>
 </html>
