@@ -255,6 +255,7 @@ ul ul a {
     border-color: #2E255D;
     padding-right: 15px;
     margin-right: 7px;
+    border-left: #FFF
 }
 
 .pesquisa-btn:hover{
@@ -269,6 +270,16 @@ ul ul a {
     height: 83%;
     margin: 1%;
     border-radius: 30px;
+}
+
+.card{
+    border-radius: 30px !important;
+}
+.card-header{
+    border-top-right-radius: 30px !important;
+    border-top-left-radius: 30px !important;
+    padding: 15px !important;
+    background-color: #FFF9EB !important;
 }
 
 /*Estilo rodapé da caixa de entrada*/

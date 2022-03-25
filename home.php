@@ -44,9 +44,9 @@
 
             <!-- Sidebar Links -->
             <ul class="list-unstyled components">
-                <li class="active"><a href="#"><i class='fas fa-envelope'></i>  Caixa de entrada (11)</a></li>
+                <li class="active"><a href="#"><i class='fas fa-envelope'></i>  Caixa de entrada (1)</a></li>
                 <li><a href="#"><i class='fas fa-pencil-alt'></i>  Escrever e-mail</a></li>
-                <li><a href="#"><i class="fas fa-edit"></i>  Rascunhos (3)</a></li>
+                <li><a href="#"><i class="fas fa-edit"></i>  Rascunhos (1)</a></li>
                 <!-- <li> Link with dropdown items 
                     <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Pages</a>
                     <ul class="collapse list-unstyled" id="homeSubmenu">
@@ -86,16 +86,22 @@
                 </div>
               </div>
               <div class="row body-caixa">
-                <p>Lorem ipsum dolor sit amet</p>
-                <p>Lorem ipsum dolor sit amet</p>
-                <p>Lorem ipsum dolor sit amet</p>
-                <p>Lorem ipsum dolor sit amet</p>
-                <p>Lorem ipsum dolor sit amet</p>
-                <p>Lorem ipsum dolor sit amet</p>
-                <p>Lorem ipsum dolor sit amet</p>
-                <p>Lorem ipsum dolor sit amet</p>
-                <p>Lorem ipsum dolor sit amet</p>
-                <p>Lorem ipsum dolor sit amet</p>
+                
+                <!-- Início do layout básico do e-mail -->
+                <div class="container">
+                  <div class="card m-3 justify-content-center">
+                    <div class="card-header">
+                      <strong>Coordenação Sistemas de Informação - Monte Carmelo: &lt;bsi@ufu.mc&gt;</strong>
+                    </div>
+                    <div class="card-body">
+                      <h4 class="card-title">Divulgação: Vaga de Estágio na NTT Data</h4>
+                      <h6 class="card-subtitle">&lt;higor@esof.com.br&gt;</h6>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui, feugiat et lorem quis, fringilla maximus nisl. Vivamus sed est pulvinar, aliquet purus ut, dictum elit.</p>
+                      <a class="btn btn-outline-secondary" href="">Mais informações</a>
+                    </div>
+                  </div>
+
+                </div>
         
               </div>
               <div class="row footer-caixa">
