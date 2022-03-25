@@ -44,9 +44,9 @@
 
             <!-- Sidebar Links -->
             <ul class="list-unstyled components">
-                <li class="active"><a href="#">Caixa de entrada (11)</a></li>
-                <li><a href="#">Escrever e-mail</a></li>
-                <li><a href="#">Rascunhos (3)</a></li>
+                <li class="active"><a href="#"><i class='fas fa-envelope'></i>  Caixa de entrada (11)</a></li>
+                <li><a href="#"><i class='fas fa-pencil-alt'></i>  Escrever e-mail</a></li>
+                <li><a href="#"><i class="fas fa-edit"></i>  Rascunhos (3)</a></li>
                 <!-- <li> Link with dropdown items 
                     <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Pages</a>
                     <ul class="collapse list-unstyled" id="homeSubmenu">
@@ -69,25 +69,66 @@
             </div>
         </nav>
 
-        <div id="content">
+        <div id="content" style="width: auto%;max-width: 100%; display: flex;">
             <button type="button" id="sidebarCollapse" class="btn navbar-btn btn-light" style="border: none;">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
+
+            <div class="container caixa-entrada">
+              <div class="row header-caixa">
+                <div class="input-group mt-3">
+                    <input class="form-control pesquisa" type="text" placeholder="Pesquisar e-mails" >
+                    <div class="input-group-append">
+                       <button type="button" class="btn btn-secondary pesquisa-btn"><i class="fas fa-search"></i></button>
+                    </div>
+                </div>
+              </div>
+              <div class="row body-caixa">
+                <p>Lorem ipsum dolor sit amet</p>
+                <p>Lorem ipsum dolor sit amet</p>
+                <p>Lorem ipsum dolor sit amet</p>
+                <p>Lorem ipsum dolor sit amet</p>
+                <p>Lorem ipsum dolor sit amet</p>
+                <p>Lorem ipsum dolor sit amet</p>
+                <p>Lorem ipsum dolor sit amet</p>
+                <p>Lorem ipsum dolor sit amet</p>
+                <p>Lorem ipsum dolor sit amet</p>
+                <p>Lorem ipsum dolor sit amet</p>
+        
+              </div>
+              <div class="row footer-caixa">
+                <nav>
+                  <ul class="pagination justify-content-center">
+                    <li class="page-item setas disabled">
+                      <a class="page-link" href="">
+                        <span><i class="fas fa-arrow-left"></i></span>
+                        <span class="sr-only">Anterior</span> <!-- Aparece apenas para leitores de tela -->
+                      </a>
+                    </li>
+                    <li class="page-item active">
+                      <a class="page-link" href="">1</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="">2</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="">3</a>
+                    </li>
+                    <li class="page-item setas">
+                      <a class="page-link" href="">
+                        <span><i class="fas fa-arrow-right"></i></span>
+                        <span class="sr-only">Próximo</span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
         </div>
 
-        <div class="container caixa-entrada">
-          <div class="header-caixa">
-            Header
-          </div>
-          <div class="body-caixa">
-            Body Caixa
-          </div>
-          <div class="footer-caixa">
-            Footer Caixa
-          </div>
-        </div>
+
 
     </div>
 

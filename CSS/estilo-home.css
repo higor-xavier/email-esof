@@ -12,6 +12,7 @@
 .wrapper {
     display: flex;
     align-items: stretch;
+    position: fixed;
 }
 
 #sidebar {
@@ -172,6 +173,7 @@ ul ul a {
     display: flex;
     align-items: stretch;
     perspective: 1500px; 
+    flex-grow: 3;
 }
 
 #sidebar {
@@ -229,4 +231,89 @@ ul ul a {
     max-width: 100% !important;
     width: 100% !important;
     box-sizing: unset;
+    height: 85%;
+}
+
+/*Estilo barra de pesquisa*/
+
+.pesquisa{
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    color: #2E255D;
+    border-color: #2E255D;
+    margin-left: 7px;
+}
+
+.pesquisa:focus, .pesquisa-btn:focus, .pesquisa-btn:focus:active{
+    border-color: #7B528D;
+}
+
+.pesquisa-btn{
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-color: #7B528D;
+    border-color: #2E255D;
+    padding-right: 15px;
+    margin-right: 7px;
+}
+
+.pesquisa-btn:hover{
+    background-color: #553C74;
+    border-color: #7B528D;
+}
+
+/*Estilo conteudo da caixa de entrada*/
+
+.body-caixa{
+    background-color: #FFF;
+    height: 83%;
+    margin: 1%;
+    border-radius: 30px;
+}
+
+/*Estilo rodapé da caixa de entrada*/
+.footer-caixa{
+    border-top: 1px solid rgba(46,37,93, 0.2);
+    margin: 0 25px;
+}
+
+.footer-caixa ul{
+    margin: 0px;
+}
+
+.footer-caixa li{
+    border-radius: 50px;
+    margin: 0px;
+    padding: 5px 0;
+
+}
+
+.footer-caixa li a{
+    padding: 10px 15px;
+    border-radius: 50px;
+    background-color: #7B528D;
+    border: none;
+    color: #FFF;
+    margin: 0 7px;
+}
+
+.footer-caixa li a:hover{
+    color: #7B528D;
+}
+
+.footer-caixa li a:focused{
+    color: #7B528D !important;
+}
+
+.page-item.active .page-link {
+    z-index: 3;
+    color: #fff;
+    background-color: #553C74;
+    border-color: #553C74;
+}
+
+
+.setas a{
+    border-radius: 50px !important;
+    padding: 12px 15px !important;
 }
