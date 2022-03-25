@@ -36,7 +36,7 @@
 
 input{
     height: 40px;
-    width: 80%;
+    width: 90% !important;
     margin-bottom: 10px;
     font-size: 18px;
     background-color: #FFF;
@@ -74,4 +74,17 @@ input.submit:hover{
     background: -moz-linear-gradient(to top, #FAA600, #F68A00);
     background: -o-linear-gradient(to top, #FAA600, #F68A00);
     background: linear-gradient(to top, #FAA600, #F68A00);
+}
+
+.btn-enviar button{
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-color: #7B528D;
+    border-color: #2E255D;
+    padding-right: 15px;
+    margin-right: 7px;
+    border-left: #FFF
+}
+.btn-enviar button{
+    border-radius: 30px;
 }

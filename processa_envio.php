@@ -101,8 +101,8 @@
 
 			mysqli_close($conexao); //Fecha conexão com banco de dados
 	  	} catch (Exception $e) {
-	  		throw new Exception("Erro na deleção", 1);
-			header('Location: home.php?att=erroDelecao'); //Caso não apagou, redireciona para a página de home
+	  		throw new Exception("Erro na inserção!", 1);
+			header('Location: home.php?att=erro'); //Caso não inseriu no bando
 	  	}
 
 	} catch (Exception $e) {
