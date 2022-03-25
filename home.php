@@ -45,7 +45,7 @@
             <!-- Sidebar Links -->
             <ul class="list-unstyled components">
                 <li class="active"><a href="#"><i class='fas fa-envelope'></i>  Caixa de entrada (1)</a></li>
-                <li><a href="#"><i class='fas fa-pencil-alt'></i>  Escrever e-mail</a></li>
+                <li><a href="#" data-bs-toggle="modal" data-bs-target="#modalEnvio"><i class='fas fa-pencil-alt'></i>  Escrever e-mail</a></li>
                 <li><a href="#"><i class="fas fa-edit"></i>  Rascunhos (1)</a></li>
                 <!-- <li> Link with dropdown items 
                     <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Pages</a>
@@ -138,10 +138,48 @@
 
     </div>
 
+    <!-- Modal de envio de e-mail -->
+    <div class="modal fade" id="modalEnvio" tabindex="-1" aria-labelledby="exampleModalLabelConfig" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content borda30">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabelConfig">Enviar e-mail</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <div class="row">
+                <div class="form-group">
+                  <form action="processa_envio.php" method="POST">
+                    <div class="form-group">
+                      <label for="para">Para:</label>
+                      <input name="para" type="text" class="form-control" id="para" placeholder="fulano@dominio.com">
+                    </div>
+
+                    <div class="form-group">
+                      <label for="assunto">Assunto:</label>
+                      <input name="assunto" type="text" class="form-control" id="assunto" placeholder="Assunto do e-mail">
+                    </div>
+
+                    <div class="form-group">
+                      <label for="mensagem">Mensagem:</label>
+                      <textarea name="mensagem" class="form-control" id="mensagem"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-block btn-enviar"><i class="fas fa-paper-plane"></i>  Enviar e-mail</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Modal -->
     <div class="modal fade" id="modalConfig" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog">
-        <div class="modal-content">
+        <div class="modal-content borda30">
           <div class="modal-header">
             <h5 class="modal-title" id="exampleModalLabel">Configurações</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>

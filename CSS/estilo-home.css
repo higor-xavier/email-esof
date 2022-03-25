@@ -248,7 +248,7 @@ ul ul a {
     border-color: #7B528D;
 }
 
-.pesquisa-btn{
+.pesquisa-btn, .btn-enviar{
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
     background-color: #7B528D;
@@ -257,8 +257,11 @@ ul ul a {
     margin-right: 7px;
     border-left: #FFF
 }
+.btn-enviar{
+    border-radius: 30px;
+}
 
-.pesquisa-btn:hover{
+.pesquisa-btn:hover, .btn-enviar:hover{
     background-color: #553C74;
     border-color: #7B528D;
 }
@@ -323,8 +326,11 @@ ul ul a {
     border-color: #553C74;
 }
 
-
 .setas a{
     border-radius: 50px !important;
     padding: 12px 15px !important;
+}
+
+.borda30{
+    border-radius: 30px!important;
 }
